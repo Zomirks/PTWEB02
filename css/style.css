@@ -1,0 +1,108 @@
+.headerPage {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.backgroundFront {
+    background: url(../images/backgroundHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: right;
+}
+
+.backgroundBack {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    -webkit-filter: drop-shadow(15px 0px 15px black);
+    filter: drop-shadow(5px 5px 5px black);
+    z-index: 0;
+}
+
+h1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+.logoHeader {
+    float: left;
+    margin: 10vh 0 0 10vh;
+}
+
+.nom {
+    font-size: 60pt;
+    margin: 13vh 0 0 40vh;
+    width: 400px;
+    text-transform: uppercase;
+}
+
+.prenom {
+    font-size: 60pt;
+    margin: 0 0 0 51.5vh;
+    width: 400px;
+    text-transform: uppercase;
+}
+
+.metier {
+    font-size: 80pt;
+    margin: 25vh 0 0 10vh;
+    text-transform: uppercase;
+}
+
+.headerIconGroup {
+    width: 100%;
+    text-align: center;
+    margin-left: 5vh;
+}
+
+.iconeHeader {
+    margin: auto;
+}
+
+h2 {
+    
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 50px;
+}
+
+.logoMenu {
+    background-image: url(../images/hexaBackMenu.png);
+    margin-left: 5%;
+    float: left;
+    margin-top: -3.5%;
+    position: relative;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    float: left;
+    line-height: 50px;
+}
+
+li a { 
+    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35.56px;
+}
+
+hr {
+    border: 0px solid transparent;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+}
