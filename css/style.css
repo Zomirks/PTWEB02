@@ -56,6 +56,10 @@ section {
     height: 90vh;
 }
 
+.sectionCompetences h2 {
+    padding: 10vh 0 10vh 20vh;
+}
+
 .sectionCompetences,
 .sectionContact {
     background-color: #000000;
@@ -137,4 +141,122 @@ hr {
 .clearfix {
     clear: both;
     content: "";
+}
+
+.col2 p {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.competenceAndBarre {
+    width: 80%;
+    margin: auto;
+    padding: 2vh 0 20vh 0;
+}
+
+.barreCompetence {
+    display: inline-block;
+}
+
+.barre {
+    background-color: white;
+    height: 2vh;
+    width: calc( (100% - 90px ) / 10 );
+    float: left;
+    border-right: 10px solid black;
+}
+
+.barre:nth-child(1) {
+    border-radius: 40% 0 0 40%;
+}
+
+.barre:nth-child(10) {
+    border-radius: 0 40% 40% 0;
+    border-right: none;
+}
+
+
+/* Common styles for all menus */
+.menu {
+	line-height: 1;
+	margin: 0 auto 3em;
+}
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+/* Ferdinand */
+.menu--ferdinand .menu__link {
+	position: relative;
+	display: block;
+	margin: 0 1.5em;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: background 0.3s, color 0.3s;
+	transition: background 0.3s, color 0.3s;
+}
+
+.menu--ferdinand .menu__link:hover,
+.menu--ferdinand .menu__link:focus {
+	color: #929292;
+}
+
+.menu--ferdinand .menu__item--current .menu__link {
+	color: aliceblue;
+}
+
+.menu--ferdinand .menu__link::before {
+	content: '';
+	position: absolute;
+    top: 40px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: aliceblue;
+	-webkit-transform: scale3d(0, 5, 1);
+	transform: scale3d(0, 5, 1);
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+	transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.menu--ferdinand .menu__item--current .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
 }
