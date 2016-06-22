@@ -1,0 +1,62 @@
+.nav.fixed{
+    position:fixed;
+    top:0;
+    z-index:1000;
+    width: 100%;
+}
+
+.header{
+    height: 100vh;
+}
+ 
+.nav{
+    background:#f3f2f1;
+    height:40px;
+    margin-bottom:15px;
+    z-index: 1;
+}
+.nav ul li{
+    float:left;
+    list-style:none
+}
+.nav ul li a{
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+}
+ 
+.main{
+    height: 15.5vh;
+}
+
+.nav.fixed{
+  transition-property: margin-top,margin-right;
+  transition-duration: .5s,.1s;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -moz-transition-property: margin-top,margin-right;
+  -moz-transition-duration: .5s,.1s;
+  -moz-transition-delay: 0;
+  -moz-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -o-transition-property: margin-top,margin-right;
+  -o-transition-duration: .5s,.1s;
+  -o-transition-delay: 0;
+  -o-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -ms-transition-property: margin-top,margin-right;
+  -ms-transition-duration: .5s,.1s;
+  -ms-transition-delay: 0;
+  -ms-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+  -webkit-transition-property: margin-top,margin-right;
+  -webkit-transition-duration: .5s,.1s;
+  -webkit-transition-delay: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.99,0.62,1);
+ 
+  position: fixed;
+  top:0;
+  z-index:1000;
+}
+
+.logoMenuFixed {
+    margin-top: -2vh !important;
+    background-image: url(../images/hexaBackMenuFixed.png) !important;
+}

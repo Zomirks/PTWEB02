@@ -7,12 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="./css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
         <link rel="stylesheet" media="screen" href="./css/style_grille.css">
+        <link rel="stylesheet" media="screen" href="./css/stickymenu.css">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 	
 	</head>
 	<body>
 		<header>
-            <div class="headerBackBlack">
+            <div class="headerBackBlack header">
                 <img src="./images/backgroundHeaderFront.png" class="backgroundBack">
                 <div class="backgroundFront"></div>
                 <div class="headerPage">
@@ -40,15 +41,17 @@
                 </ul>
                 <hr class="clearfix">
             </nav>
--->     <nav class="menu menu--ferdinand">
-                <img class="logoMenu" src="./images/logoMenu.png">
+-->         
+            <nav id="navmenu" class="menu menu--ferdinand nav">
+                <img id="logoMenu" class="logoMenu" src="./images/logoMenu.png">
 					<ul class="menu__list">
-						<li class="menu__item menu__item--current"><a href="#aPropos" class="menu__link">A propos</a></li>
+						<li class="menu__item menu__item--current"><a href="#navbot" class="menu__link">A propos</a></li>
 						<li class="menu__item"><a href="#competences" class="menu__link">Compétences</a></li>
 						<li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
 						<li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
 					</ul>
-				</nav>
+            </nav>
+            <div id="navbot"></div>
         </header>
         
         <main>
@@ -250,6 +253,8 @@ Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfi
             <p>Copyright</p>
             <a href=""><img src=""></a>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/monscript.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/clipboard.min.js"></script>
 		<script>

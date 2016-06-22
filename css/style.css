@@ -33,7 +33,7 @@ h1 {
 }
 
 section {
-    height: 93vh;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ section {
 }
 
 .sectionCompetences h2 {
-    padding: 10vh 0 10vh 20vh;
+    padding: 20vh 0 10vh 30vh;
 }
 
 .sectionCompetences,
@@ -99,8 +99,12 @@ section {
 h2 {
     font-size: 16pt;
     font-weight: bold;
-    padding: 5vh 0 5vh 20vh;
+    padding: 5vh 0 5vh 30vh;
     text-transform: capitalize;
+}
+
+#aPropos {
+    padding: 0 0 5vh 30vh;
 }
 
 .description {
@@ -240,7 +244,7 @@ hr {
 .menu--ferdinand .menu__link::before {
 	content: '';
 	position: absolute;
-    top: 40px;
+    top: 3.5vh;
 	bottom: 0;
 	left: 0;
 	width: 100%;
