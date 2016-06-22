@@ -263,6 +263,7 @@ hr {
 }
 
 .menuPortfolio {
+    float: left;
     display: block;
     width: 15vw;
     height: 50vh;
@@ -274,3 +275,12 @@ hr {
     float: none;
 }
 
+#hexGrid {
+    float: right;
+    width: 75vw;
+    margin-right: 2vh;
+}
+
+#portfolio {
+    padding: 10vh 0 5vh 30vh;
+}
