@@ -10,10 +10,12 @@
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
         <link rel="stylesheet" media="screen" href="./css/style_grille.css">
         <link rel="stylesheet" media="screen" href="./css/stickymenu.css">
+        <link rel="stylesheet" media="screen" href="./css/onepage-scroll.css">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 	
 	</head>
 	<body>
+        <div class="main">
 		<header>
             <div class="headerBackBlack header">
                 <img src="./images/backgroundHeaderFront.png" class="backgroundBack">
@@ -59,6 +61,7 @@
         <main>
             <section class="sectionPropos">
                 <h2 id="aPropos">A propos...</h2>
+                <img src="./images/avatarHexa.png" class="avatar">
                 <p class="description">Suus satis. Quod etiam optime. Vos ite post eum, fistulae, nunquam vivum exire ab ea. Sed cum hoc ... excidit tibi in cibo aut in potu, aut: olefac Elegantioris non sit ... triginta sex horae post ... Poof. Vir aetatis operantes, dura sicut facit ... nemo mirabatur. Mike suspectas habere possunt, sed quod omnes illi eris. Obsecro, unum homicidam maniaco tempore. 
 Ecce dabo Pinkman Isai OK? Sicut locutus est tibi, et datus est, et hic sine Semper consequat volumus ... et ille in urbe ista licet? Et infernus, ubi tu non Virginiae ornare vel ipsum. Ut enim Albuquerque et ille eum iure hic, et ego ducam te ad iustitiam. Quid dicis? 
 At nolo de me ipso turpis. Ut nullam curae. Scis quid mihi quod infernum sit amet nunc magis animum, nunc eros eget quam cogitatione emptio damnat. Purus? Sic, si fieri justi ... amabo. 
@@ -72,7 +75,7 @@ Suspicio? Bene ... tunc ibimus? Quis uh ... CONEXUS locus his diebus? Quisque se
 Jackson Isai? Tu quoque ... A te quidem a ante. Vos scitis quod blinking res Ive 'been vocans super vos? Et conteram illud, et conteram hoc. Maledicant druggie excors. Iam hoc tu facere conatus sum ad te in omni tempore? 
 Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium cum dolor apparatus. Qui curis! Modo nobis certamen est, qui non credunt at. 
 Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus? </p>
-                <img class="proposLogoBack" src="./images/logoGrand.png">
+                <a class="dlCV">Télécharger mon CV</a>
             </section>
             <section class="sectionCompetences">
                 <h2 id="competences">compétences</h2>
@@ -311,8 +314,11 @@ Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfi
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="./js/monscript.js"></script>
+        <script type="text/javascript" src="./js/onepagescroll.js"></script>
+        <script type="text/javascript" src="./js/onepagescroll.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/clipboard.min.js"></script>
+            
 		<script>
 		(function() {
 			[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
@@ -347,5 +353,7 @@ Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfi
 			});
 		})(window);
 		</script>
+        <script>onePageScroll(".main");</script>
+    </div>
 	</body>
 </html>

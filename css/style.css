@@ -5,6 +5,19 @@ html {
     font-family: 'Overlock SC', cursive;
 }
 
+.avatar {
+    width: 15vw;
+    margin-top: 10vh;
+    margin-left: 3.6vw;
+    float: left;
+}
+.dlCV {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-left: 45%;
+}
+
 .headerPage {
     height: 100vh;
     position: absolute;
@@ -45,14 +58,6 @@ section {
     margin: 10vh 0 0 10vh;
 }
 
-.proposLogoBack {
-    float: right;
-    margin-right: -10vh;
-    transform: rotate(-15deg);
-    opacity: 0.6;
-    height: 80vh;
-    margin-top: -15vh;
-}
 .sectionPropos {
     width: 100%;
     overflow: hidden;
@@ -113,7 +118,7 @@ h2 {
 }
 
 .description {
-    padding: 0 15vh 0 15vh;
+    padding: 15vh 25vw 5vh 25vw;
 }
 
 .menu {
@@ -123,7 +128,7 @@ h2 {
 
 .logoMenu {
     background-image: url(../images/hexaBackMenu.png);
-    margin-left: 11vh;
+    margin-left: 6vw;
     float: left;
     margin-top: -6vh;
     position: relative;
