@@ -97,13 +97,27 @@ section {
 }
 
 .headerIconGroup {
-    width: 100%;
+    width: 60vw;
     text-align: center;
-    margin-left: 5vh;
 }
 
 .iconeHeader {
-    margin: auto;
+    transition: all .3s ease-in-out;
+    width: 90px;
+    height: 70px;
+}
+.iconeHeader:hover {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform:scale(1.4); /* Safari and Chrome */
+    -moz-transform:scale(1.4); /* Firefox */
+    -ms-transform:scale(1.4); /* IE 9 */
+    -o-transform:scale(1.4); /* Opera */
+    transform:scale(1.4);
+}
+
+.iconeHeader {
+    margin: 5vh 2vw 1vh 2vw;
 }
 
 h2 {
