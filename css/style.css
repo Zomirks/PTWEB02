@@ -42,9 +42,11 @@ html {
 }
 
 h1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #cccccc; /* Old browsers */
+    color: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 100%); /* FF3.6-15 */
+    color: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    color: linear-gradient(to bottom,  #cccccc 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
     margin: 0;
 }
 
@@ -154,10 +156,13 @@ li {
     line-height: 50px;
 }
 
-li .menu__link { 
-    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+li .menu__link {
+    text-decoration: none;
+    color: #cccccc; /* Old browsers */
+    color: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 100%); /* FF3.6-15 */
+    color: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    color: linear-gradient(to bottom,  #cccccc 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 hr {
@@ -267,39 +272,45 @@ hr {
 	transform: scale3d(1, 1, 1);
 }
 
-.menuPortfolio li:first-of-type {
-    margin-top: 20vh;
-}
-
-.lienPortfolio {
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-transform: capitalize;
-    display: block;
-    text-decoration: none;
-    margin-top: 10vh
-}
-
-.menuPortfolio {
-    float: left;
-    display: block;
-    width: 15vw;
-    height: 50vh;
-    text-align: center;
-    font-size: 2em;
-}
-
-.menuPortfolio li {
-    float: none;
-}
-
 #hexGrid {
-    float: right;
-    width: 75vw;
-    margin-right: 2vh;
+    margin: auto;
+    width: 60vw;
 }
 
 #portfolio {
     padding: 10vh 0 5vh 30vh;
 }
+
+#bouton {
+    margin-left: 45.5%;
+    list-style: none;
+}
+
+#bouton li {
+    padding: 5px;
+    list-style:none;
+    display:inline-block;
+}
+
+#bouton li a {
+    color:black;
+    text-indent:-9999px;
+    display:block;
+    border:2px solid;
+    height:10px;
+    width:10px;
+    line-height:0;
+    margin:0 3px;
+    transform: rotate(-45deg);  
+    transition: all 0.3s ease;  
+}
+
+#bouton li a:hover {
+    background: black;
+}
+
+#bouton li .activebouton {
+    transform: rotate(0);
+    background: black;
+}
+
