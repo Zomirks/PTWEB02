@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Overlock+SC);
 
 html {
+    overflow-x: hidden;
+    box-sizing: border-box;
     width: 100%;
     font-family: 'Overlock SC', cursive;
 }
@@ -57,7 +59,7 @@ section {
 
 .logoHeader {
     float: left;
-    margin: 10vh 0 0 10vh;
+    margin: 10vh 0 0 10vw;
 }
 
 .sectionPropos {
@@ -66,8 +68,12 @@ section {
     height: 90vh;
 }
 
-.sectionCompetences h2 {
-    padding: 20vh 0 10vh 30vh;
+#competences {
+    padding: 15vh 0 10vh 18vw;
+}
+
+#contact {
+    padding: 15vh 0 10vh 18vw;
 }
 
 .sectionCompetences,
@@ -125,12 +131,12 @@ section {
 h2 {
     font-size: 16pt;
     font-weight: bold;
-    padding: 5vh 0 5vh 30vh;
+    padding: 5vh 0 5vh 18vw;
     text-transform: capitalize;
 }
 
 #aPropos {
-    padding: 0 0 5vh 30vh;
+    padding: 0 0 5vh 18vw;
 }
 
 .description {
@@ -170,6 +176,7 @@ hr {
 }
 
 .clearfix {
+    display: block;
     clear: both;
     content: "";
 }
@@ -278,23 +285,25 @@ hr {
 }
 
 #portfolio {
-    padding: 10vh 0 5vh 30vh;
+    padding: 15vh 0 5vh 18vw;
 }
 
 #bouton {
-    margin-left: 45.5%;
+    margin-top: 5%;
+    margin-left: 42%;
     list-style: none;
 }
 
 #bouton li {
+    margin-left: 2%;
     padding: 5px;
     list-style:none;
     display:inline-block;
 }
 
 #bouton li a {
+    cursor: pointer;
     color:black;
-    text-indent:-9999px;
     display:block;
     border:2px solid;
     height:10px;
@@ -314,3 +323,41 @@ hr {
     background: black;
 }
 
+.formulaire {
+    width: 100vw;
+    height: 80vh;
+}
+
+.formulaire div {
+    display: block;
+}
+.formulaire label {
+    margin: 0 0 5vh 20vw;
+    width: 10%;
+    display: inline-block;
+}
+
+.formulaire div input {
+    color: black;
+    padding: 5px;
+    width: 30vw;
+    margin: 0 0 5vh 0;
+}
+
+.formulaire .message {
+    float: left;
+}
+
+.formulaire textarea {
+    color: black;
+    width: 50vw;
+    max-height: 10vh;
+    height: 10vh;
+    max-width: 50vw;
+}
+
+.envoyer {
+    color: black;
+    padding: 5px;
+    margin-top: 5vh;
+}
