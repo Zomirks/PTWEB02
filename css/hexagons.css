@@ -58,7 +58,7 @@
 
 .hex h1 {
     font-weight: bold;
-    bottom: 55%;
+    bottom: 50%;
     padding-top:50%;
     font-size: 1.5em;
     z-index: 1;
@@ -69,7 +69,7 @@
 .hex h1:after {
     content: '';
     position: absolute;
-    bottom: -9%;
+    bottom: -4%;
     left: 30%;
     width: 40%;
     text-align: center;
