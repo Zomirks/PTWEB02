@@ -1,49 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Overlock+SC);
+@import url(https://fonts.googleapis.com/css?family=Signika);
 
 html {
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
-    font-family: 'Overlock SC', cursive;
-}
-
-.avatar {
-    width: 15vw;
-    margin-top: 10vh;
-    margin-left: 3.6vw;
-    float: left;
-}
-.dlCV {
-    background-color: black;
-    color: white;
-    padding: 5px;
-    margin-left: 45%;
-}
-
-.headerPage {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-}
-
-.backgroundFront {
-    background: url(../images/backgroundHeader.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: right;
-}
-
-.backgroundBack {
-    width: 100%;
-    height: 100vh;
-    float: left;
-    -webkit-filter: drop-shadow(15px 0px 15px black);
-    filter: drop-shadow(5px 5px 5px black);
-    z-index: 0;
+    font-family: 'Signika', cursive;
 }
 
 h1 {
+    font-family: 'Overlock SC', cursive;
     color: #cccccc; /* Old browsers */
     color: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 100%); /* FF3.6-15 */
     color: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
@@ -57,29 +23,23 @@ section {
     box-sizing: border-box;
 }
 
+
+
+        /*********  Header  *********/
+
+header {
+        font-family: 'Overlock SC', cursive;
+}
+
+.headerPage {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
 .logoHeader {
     float: left;
     margin: 10vh 0 0 10vw;
-}
-
-.sectionPropos {
-    width: 100%;
-    overflow: hidden;
-    height: 90vh;
-}
-
-#competences {
-    padding: 15vh 0 10vh 18vw;
-}
-
-#contact {
-    padding: 15vh 0 10vh 18vw;
-}
-
-.sectionCompetences,
-.sectionContact {
-    background-color: #000000;
-    color: white;
 }
 
 .nom {
@@ -103,6 +63,78 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
+
+.backgroundFront {
+    background: url(../images/backgroundHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: right;
+}
+
+.backgroundBack {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    -webkit-filter: drop-shadow(15px 0px 15px black);
+    filter: drop-shadow(5px 5px 5px black);
+    z-index: 0;
+}
+
+        /*********  Menu  *********/
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 5vh;
+}
+
+.logoMenu {
+    background-image: url(../images/hexaBackMenu.png);
+    margin-left: 6vw;
+    float: left;
+    margin-top: -6vh;
+    position: relative;
+}
+
+        /*********  Section A propos  *********/
+
+.sectionPropos {
+    width: 100%;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.avatar {
+    width: 15vw;
+    margin-top: 10vh;
+    margin-left: 3.6vw;
+    float: left;
+}
+
+.dlCV {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    margin-left: 45%;
+}
+
+        /*********  Section Compétences  *********/
+
+#competences {
+    padding: 15vh 0 10vh 18vw;
+}
+
+.sectionCompetences {
+    background-color: black;
+    color: aliceblue;
+}
+
+        /*********  Section Portfolio  *********/
+
+
+
+
+
 
 .headerIconGroup {
     width: 60vw;
@@ -129,6 +161,7 @@ section {
 }
 
 h2 {
+    font-family: 'Overlock SC', cursive;
     font-size: 16pt;
     font-weight: bold;
     padding: 5vh 0 5vh 18vw;
@@ -143,18 +176,7 @@ h2 {
     padding: 15vh 25vw 5vh 25vw;
 }
 
-.menu {
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 5vh;
-}
 
-.logoMenu {
-    background-image: url(../images/hexaBackMenu.png);
-    margin-left: 6vw;
-    float: left;
-    margin-top: -6vh;
-    position: relative;
-}
 
 li {
     list-style: none;
@@ -198,7 +220,7 @@ hr {
 }
 
 .barre {
-    background-color: white;
+    background-color: aliceblue;
     height: 2vh;
     width: calc( (100% - 90px ) / 10 );
     float: left;
@@ -285,7 +307,7 @@ hr {
 }
 
 #portfolio {
-    padding: 15vh 0 5vh 18vw;
+    padding: 10vh 0 5vh 18vw;
 }
 
 #bouton {
@@ -325,7 +347,6 @@ hr {
 
 .formulaire {
     width: 100vw;
-    height: 80vh;
 }
 
 .formulaire div {
@@ -361,3 +382,157 @@ hr {
     padding: 5px;
     margin-top: 5vh;
 }
+
+.CSS .barre:nth-child(9),
+.CSS .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);    
+}
+
+.PHP .barre:nth-child(7),
+.PHP .barre:nth-child(8),
+.PHP .barre:nth-child(9),
+.PHP .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);    
+}
+
+.Mysql .barre:nth-child(7),
+.Mysql .barre:nth-child(8),
+.Mysql .barre:nth-child(9),
+.Mysql .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);    
+}
+
+.Javascript .barre:nth-child(7),
+.Javascript .barre:nth-child(8),
+.Javascript .barre:nth-child(9),
+.Javascript .barre:nth-child(10),
+.Javascript .barre:nth-child(6) {
+    background-color: rgb(13, 14, 15);        
+}
+
+.Photoshop .barre:nth-child(9),
+.Photoshop .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);       
+}
+
+.Illustrator .barre:nth-child(9),
+.Illustrator .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);       
+}
+
+.AfterEffects .barre:nth-child(8),
+.AfterEffects .barre:nth-child(9),
+.AfterEffects .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);       
+}
+
+.Cinema4D .barre:nth-child(8),
+.Cinema4D .barre:nth-child(9),
+.Cinema4D .barre:nth-child(10) {
+    background-color: rgb(13, 14, 15);    
+}
+
+
+        /*********  Section Contact  *********/
+
+#contact {
+    padding: 10vh 0 10vh 18vw;
+}
+
+.sectionContact {
+    background-color: black;
+    color: aliceblue;
+    height: 95vh;
+}
+
+        /*********  Scrollbar  *********/
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent none;
+    border: 4px solid transparent;
+    border-right-width: 5px;
+    border-left-width: 7px;
+    margin: 30px;
+    -webkit-box-shadow: inset 1px 1px 0 0 rgb(40, 75, 43), inset -1px -1px 0 0 aliceblue;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0 solid transparent;
+    border-right-width: 4px;
+    border-left-width: 6px;
+    -webkit-box-shadow: inset 0 0 0 1px black, inset 0 0 0 6px black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), inset 0 0 0 6px black;
+    border-right-width: 2px;
+    border-left-width: 4px;
+    -webkit-border-radius: 9px 5px;
+}
+
+
+
+
+        /*********  BackToTop  *********/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+
+
+        /*********  Footer  *********/
+
+footer {
+    line-height: 5vh;
+    text-align: center;
+    color: aliceblue;
+    height: 5vh;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid aliceblue;
+}
+
+
+
+        /*********  Responsive  *********/
+
+
