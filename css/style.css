@@ -90,7 +90,7 @@ header {
 
 .logoMenu {
     background-image: url(../images/hexaBackMenu.png);
-    margin-left: 6vw;
+    margin-left: 7%;
     float: left;
     margin-top: -6vh;
     position: relative;
@@ -107,15 +107,19 @@ header {
 .avatar {
     width: 15vw;
     margin-top: 10vh;
-    margin-left: 3.6vw;
+    margin-left: 3.9%;
     float: left;
 }
 
 .dlCV {
+    text-align: center;
     background-color: black;
     color: aliceblue;
-    padding: 5px;
-    margin-left: 45%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 200px !important;
     text-decoration: none;
 }
 
@@ -382,6 +386,16 @@ hr {
     color: black;
     padding: 5px;
     margin-top: 5vh;
+    float: right;
+    margin-right: 20%;
+    
+
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    display: block;
+    width: 200px !important;
+    text-decoration: none;
 }
 
 .CSS .barre:nth-child(9),
@@ -437,13 +451,13 @@ hr {
         /*********  Section Contact  *********/
 
 #contact {
-    padding: 10vh 0 10vh 18vw;
+    padding: 20vh 0 10vh 18vw;
 }
 
 .sectionContact {
     background-color: black;
     color: aliceblue;
-    height: 95vh;
+    height: 93vh;
 }
 
         /*********  Scrollbar  *********/
@@ -478,62 +492,67 @@ hr {
 }
 
 
-
-
-        /*********  BackToTop  *********/
-.cd-top {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* image replacement properties */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
-}
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
-}
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-.no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-
-
-
         /*********  Footer  *********/
 
 footer {
-    line-height: 5vh;
     text-align: center;
+    line-height: 5vh;
     color: aliceblue;
     height: 5vh;
     background: rgba(0, 0, 0, 0.9);
     border-top: 2px solid aliceblue;
 }
 
+footer p:first-of-type {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+}
 
+footer p {
+    display: inline-block;
+}
 
         /*********  Responsive  *********/
+
+
+
+        /*********  BackToTop  *********/
+.cd-top img {
+    display: block;
+    height: 50%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.cd-top img:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 4.5vh;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+    background-image: url(../images/polygon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    visibility: hidden;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
