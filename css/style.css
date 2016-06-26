@@ -150,6 +150,7 @@ header {
     transition: all .3s ease-in-out;
     width: 90px;
     height: 70px;
+    margin: 5vh 2vw 1vh 2vw;
 }
 .iconeHeader:hover {
 	-webkit-backface-visibility: hidden;
@@ -159,10 +160,6 @@ header {
     -ms-transform:scale(1.4); /* IE 9 */
     -o-transform:scale(1.4); /* Opera */
     transform:scale(1.4);
-}
-
-.iconeHeader {
-    margin: 5vh 2vw 1vh 2vw;
 }
 
 h2 {
@@ -515,7 +512,89 @@ footer p {
 
         /*********  Responsive  *********/
 
+@media (max-width: 800px) {
+    .nom {
+        font-size: 24pt;
+        margin: 6% 0 0 0%;
+        width: 100px;
+        float: left;
+    }
+    .prenom {
+        margin: 0 0 0 15%;
+        font-size: 24pt;
+        width: 100px;
+    }
+    .metier {
+        margin: 20% 0 0 5%;
+        font-size: 24pt;
+        width: 100px;
+    }
+    .logoHeader {
+        margin: 5% 0 0 5%;
+        width: 10%;
+    }
+    .backgroundFront {
+        height: 40vh;
+        width: 100vw;
+    }
 
+    .backgroundBack {
+        height: 40vh;
+        width: 100vw;
+    }
+    
+    .headerIconGroup {
+        width: 30%;
+    }
+
+    .iconeHeader {
+        width: 12%;
+        height: 12%;
+        margin: 10% 0 0 5%;
+    }
+    .header {
+        height: auto;
+    }
+    .headerPage {
+        height: auto;
+    }
+    .logoMenu {
+        display: none;
+    }
+    .menu--ferdinand .menu__link {
+        margin: 0 0 0 2em;
+    }
+    #competences {
+        padding: 10% 0 20% 10%;
+    }
+    #portfolio,
+    #contact,
+    #aPropos {
+        padding: 0 0 0 0;
+        margin: 10% 0 20% 10%;
+    }
+    h2 {
+        margin: 0 0 0 0;
+        font-size: 20pt;
+    }
+    .avatar {
+        margin: -5% 0 0 35%;
+        width: 30%;
+        height: 25%;
+        float: none;
+    }
+    .description {
+        padding: 10% 20% 0 20%;
+        text-align: center;
+    }
+    #bouton {
+        margin-left: 33%;
+    }
+    #bouton li a {
+        width: 20px;
+        height: 20px;
+    }
+}
 
         /*********  BackToTop  *********/
 .cd-top img {
